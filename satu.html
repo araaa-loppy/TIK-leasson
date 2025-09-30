@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Aesthetic Lilac</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --lilac-light: #e6d7ff;
+            --lilac: #c9a8ff;
+            --lilac-medium: #a67cff;
+            --lilac-dark: #8a5ced;
+            --lilac-deep: #6b3fa0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8f4ff, #f0e6ff);
+            color: #5a4a6a;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(138, 92, 237, 0.15);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, var(--lilac-medium), var(--lilac-deep));
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 1rem;
+            background: var(--lilac-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--lilac-dark);
+        }
+
+        .profile-name {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            font-size: 1rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .profile-body {
+            padding: 2rem;
+        }
+
+        .profile-bio {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--lilac-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lilac-dark);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--lilac-medium);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            background: linear-gradient(to right, var(--lilac-medium), var(--lilac-dark));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(138, 92, 237, 0.4);
+        }
+
+        .skills-section {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(138, 92, 237, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--lilac-dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .skill {
+            background: var(--lilac-light);
+            color: var(--lilac-deep);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            background: var(--lilac-medium);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--lilac-dark);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .profile-header {
+                padding: 2rem 1rem 1.5rem;
+            }
+            
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                font-size: 2rem;
+            }
+            
+            .profile-name {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-pic">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1 class="profile-name">Mutiara Dewi DEsvita</h1>
+                <p class="profile-title">anak sekolaaa</p>
+            </div>
+            <div class="profile-body">
+                <p class="profile-bio">
+                    akuu araa mwehehehe
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="#" class="btn">Hubungi Saya</a>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills">
+                <span class="skill">UI Design</span>
+                <span class="skill">UX Research</span>
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Figma</span>
+                <span class="skill">Adobe XD</span>
+                <span class="skill">Responsive Design</span>
+                <span class="skill">Illustration</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Alicia Jasmine. Made with <i class="fas fa-heart" style="color: var(--lilac-medium);"></i></p>
+    </footer>
+
+    <script>
+        // Efek animasi sederhana
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileCard = document.querySelector('.profile-card');
+            const skills = document.querySelectorAll('.skill');
+            
+            // Animasi saat halaman dimuat
+            profileCard.style.opacity = '0';
+            profileCard.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                profileCard.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                profileCard.style.opacity = '1';
+                profileCard.style.transform = 'translateY(0)';
+            }, 300);
+            
+            // Efek hover pada skill
+            skills.forEach(skill => {
+                skill.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                skill.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
